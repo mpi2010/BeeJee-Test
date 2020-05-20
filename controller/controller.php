@@ -10,25 +10,31 @@ session_start();
         unset($_SESSION['status']);
         $_SESSION['sort'] = $_GET['sort'];
   //----------------------
-            if(isset($_GET['name'])) {
+            if(isset($_GET['name']))
+            {
                 $_SESSION['name'] = $_GET['name'];
-                if($_GET['sort']=='asc'){
+                if($_GET['sort']=='asc')
+                {
                     $statement = $pdo->prepare("SELECT * FROM tasks ORDER BY name ASC");
                 }else{
                     $statement = $pdo->prepare("SELECT * FROM tasks ORDER BY name DESC");
                 }
             }
-            if(isset($_GET['email'])) {
+            if(isset($_GET['email']))
+            {
                 $_SESSION['email'] = $_GET['email'];
-                if($_GET['sort']=='asc'){
+                if($_GET['sort']=='asc')
+                {
                     $statement = $pdo->prepare("SELECT * FROM tasks ORDER BY email ASC");
                 }else{
                     $statement = $pdo->prepare("SELECT * FROM tasks ORDER BY email DESC");
                 }
             }
-            if(isset($_GET['status'])) {
+            if(isset($_GET['status']))
+            {
                 $_SESSION['status'] = $_GET['status'];
-                if($_GET['sort']=='asc'){
+                if($_GET['sort']=='asc')
+                {
                     $statement = $pdo->prepare("SELECT * FROM tasks ORDER BY status ASC");
                 }else{
                     $statement = $pdo->prepare("SELECT * FROM tasks ORDER BY status DESC");
@@ -39,7 +45,8 @@ session_start();
             $tasks = $statement->fetchAll(PDO::FETCH_ASSOC);
 //
                 $i=1;
-      foreach ($tasks as $item ){
+      foreach ($tasks as $item )
+      {
 
           $data = [
               "id" => $item['id'],
@@ -55,9 +62,9 @@ session_start();
  //-----------------------------
         header("Location: /");
     }
-    if(isset($_GET['page'])){
+    if(isset($_GET['page']))
+    {
         $_SESSION['page']=$_GET['page'];
-
 //
         header("Location: /");
     }
