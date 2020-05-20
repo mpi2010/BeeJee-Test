@@ -9,7 +9,6 @@ session_start();
         unset($_SESSION['email']);
         unset($_SESSION['status']);
         $_SESSION['sort'] = $_GET['sort'];
-  //----------------------
             if(isset($_GET['name']))
             {
                 $_SESSION['name'] = $_GET['name'];

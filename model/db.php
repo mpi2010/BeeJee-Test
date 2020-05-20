@@ -19,7 +19,8 @@ $sort = 'ASC';
      }
 
      $str_paginate ='';
-     for($i=1;$i<=$all_page;$i++){
+     for($i=1;$i<=$all_page;$i++)
+     {
          $str_paginate.= '<li class="page-item"><a class="page-link" href="/controller/controller.php?page=';
          $str_paginate.="$i";
          $str_paginate.='">';
@@ -27,7 +28,8 @@ $sort = 'ASC';
          $str_paginate.='</a></li>';
      }
      $page_active = 1;
-     if (isset($_SESSION['page'])) {
+     if (isset($_SESSION['page']))
+     {
          $page_active = $_SESSION['page'];
      }
      $t1 = ($page_active - 1) * PAGE_NUMBER;
