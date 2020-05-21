@@ -8,6 +8,10 @@
         $name = $_POST['name'];
         $email = $_POST['email'];
         $description = strip_tags($_POST['description']);
+        $name = htmlspecialchars($name);
+        $email = htmlspecialchars($email);
+        $description = htmlspecialchars($description);
+
         $errors = false;
         if(strlen($name)<2)
         {
