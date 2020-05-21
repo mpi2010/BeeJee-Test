@@ -25,9 +25,9 @@ if(isset($_POST['submit'])) {
                         $task['status_admin'] = 1;
                }
                $data = [
-                   "id" => $_GET['id'],
-                   "status"   =>  $_POST['status'],
-                   "status_admin"   =>  $task['status_admin'],
+                   "id" => strip_tags($_GET['id']),
+                   "status"   =>  strip_tags($_POST['status']),
+                   "status_admin"   =>  strip_tags($task['status_admin']),
                    "description" => strip_tags($_POST['description'])
                ];
 

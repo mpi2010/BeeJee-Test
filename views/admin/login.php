@@ -7,9 +7,9 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="with=device-with, initial-scale=1.0">
     <title>Bootstrap 4 site</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="http://btest.mpi.biz.ua/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://btest.mpi.biz.ua/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://btest.mpi.biz.ua/assets/css/main.css">
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -24,7 +24,7 @@ session_start();
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="/views/admin/login.php">Login</a></li>
+                    <li class="active"><a href="http://btest.mpi.biz.ua/views/admin/login.php">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -84,7 +84,7 @@ session_start();
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="http://btest.mpi.biz.ua/assets/js/bootstrap.min.js"></script>
 
 </body>
 </html>
