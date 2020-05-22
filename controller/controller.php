@@ -58,7 +58,7 @@ session_start();
           $i++;
       }
 
- //-----------------------------
+ //
         header("Location: /");
     }
     if(isset($_GET['page']))
